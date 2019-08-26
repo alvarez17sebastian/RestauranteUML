@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8c711b3-bc5b-4d3b-8f6f-1f64e992e633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/ElementoConfort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteMotivo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteTipoCliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstantesTipoMesa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" afterDir="false" />
-    </list>
+    <list default="true" id="a8c711b3-bc5b-4d3b-8f6f-1f64e992e633" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
