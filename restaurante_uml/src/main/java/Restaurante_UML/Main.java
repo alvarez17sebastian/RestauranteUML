@@ -62,9 +62,7 @@ public class Main {
 
 
        restaurante_ElCafetero.agregarCliente(eduardo);
-       
-       restaurante_ElCafetero.verificarNumeroReservasXcliente();
-  
+
         System.out.println(restaurante_ElCafetero);
     }
 }

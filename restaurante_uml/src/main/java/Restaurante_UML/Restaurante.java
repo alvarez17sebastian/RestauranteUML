@@ -37,12 +37,4 @@ public class Restaurante {
                 "\nListado de clientes: \n" +clientes;
         return contenido;
     }
-    
-    public void verificarNumeroReservasXcliente(){
-        for(Cliente cliente: clientes){
-            if(cliente.obtenerReservas().size() >= 5){
-                cliente.asignarTipoCliente(ConstanteTipoCliente.TIPO_CLIENTE_VIP);
-            }
-        }
-    }
 }

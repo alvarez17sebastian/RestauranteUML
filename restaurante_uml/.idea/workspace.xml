@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d56d75-b9be-4eca-ac28-7c83e8b89018" name="Default Changelist" comment="" />
+    <list default="true" id="a8c711b3-bc5b-4d3b-8f6f-1f64e992e633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/ElementoConfort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteMotivo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteTipoCliente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstantesTipoMesa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1Pl2N5VYT9tdxBFQa6MpqZ4rweE" />
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\s207e9.B14_207_09\IdeaProjects\restaurante_uml\src\main\java\Restaurante_UML" />
-    </key>
+  <component name="ProjectId" id="1PyiJh0sFynvdmcNHgM6KCWqfNv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -34,7 +53,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Restaurante_UML.Main" />
-      <module name="restaurante_uml" />
+      <module name="main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Restaurante_UML.*" />
@@ -56,17 +75,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="32d56d75-b9be-4eca-ac28-7c83e8b89018" name="Default Changelist" comment="" />
-      <created>1566434319912</created>
+      <changelist id="a8c711b3-bc5b-4d3b-8f6f-1f64e992e633" name="Default Changelist" comment="" />
+      <created>1566852666141</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566434319912</updated>
-      <workItem from="1566434327400" duration="2624000" />
-      <workItem from="1566438495040" duration="46000" />
+      <updated>1566852666141</updated>
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

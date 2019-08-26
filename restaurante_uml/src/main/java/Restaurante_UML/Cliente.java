@@ -39,7 +39,18 @@ public class Cliente {
     
     public boolean realizarReserva(Reserva reserva){
         this.reservas.add(reserva);
+        verificarClienteVIP();
         return true;
+    }
+
+    private void verificarClienteVIP(){
+        if(reservas.size() >= 5){
+            this.asignarTipoCliente(ConstanteTipoCliente.TIPO_CLIENTE_VIP);
+        }
+    }
+
+    public int obtenerNumeroDeReservas(){
+        return this.reservas.size();
     }
     
     public void asignarTipoCliente(String tipoCliente){
