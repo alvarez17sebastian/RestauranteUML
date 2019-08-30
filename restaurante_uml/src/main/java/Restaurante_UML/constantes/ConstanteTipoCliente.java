@@ -10,6 +10,9 @@ package Restaurante_UML.constantes;
  * @author sebastian.alvarez
  */
 public class ConstanteTipoCliente {
+    public static String CLIENTE_EMPRESA = "Empresa";
+    public static String CLIENTE_PERSONA = "Persona";
+
     public static String TIPO_CLIENTE_NORMAL = "normal";
     public static String TIPO_CLIENTE_VIP = "VIP";
     

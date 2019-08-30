@@ -5,14 +5,19 @@
  */
 package Restaurante_UML;
 
+import Restaurante_UML.Interfaces.IReservable;
+import Restaurante_UML.constantes.ConstanteNombreElemento;
+import Restaurante_UML.constantes.ConstantesTipoMesa;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  *
  * @author sebastian.alvarez
  */
-public class Mesa {
+public class Mesa implements IReservable {
     private String numeroMesa;
     private String tipoMesa;
     private List<ElementoConfort> elementosConfort = new ArrayList<>();
@@ -20,18 +25,29 @@ public class Mesa {
     public Mesa(String numeroMesa,String tipoMesa){
         this.numeroMesa = numeroMesa;
         this.tipoMesa = tipoMesa;
-    }
-    
-    public String obtenerTipoMesa(){
-        return this.tipoMesa;
-    }
-    
-    public List<ElementoConfort> obtenerElementosDeConfort(){
-        return this.elementosConfort;
+
     }
     
     public void agregarElementoDeConfort(ElementoConfort elementoConfort){
         elementosConfort.add(elementoConfort);
+        establecerAmbienteDeElemento();
+    }
+
+    public String obtenerNumeroMesa(){
+        return  this.numeroMesa;
+    }
+
+
+    private void establecerAmbienteDeElemento(){
+        if(this.tipoMesa.equals(ConstantesTipoMesa.MESA_LOUNGE)){
+            asignarAmbiente(elementosConfort);
+        }
+    }
+
+    private void asignarAmbiente(List<ElementoConfort> elementosConfort){
+        for(ElementoConfort element: elementosConfort){
+            element.indicarAmbiente("ambiente: " + UUID.randomUUID().toString());
+        }
     }
 
     @Override
@@ -39,5 +55,19 @@ public class Mesa {
         String content = "Numero mesa: " + numeroMesa + "\nTipo mesa: " + tipoMesa + "\nElementos de confort: " + elementosConfort;
         return content;
     }
-    
+
+    @Override
+    public String obtenerNombreElemento() {
+        return ConstanteNombreElemento.ELEMENTO_MESA;
+    }
+
+    @Override
+    public boolean verificarDisponibilidad(List<Reserva> reservas) {
+        for (Reserva reserva : reservas) {
+           if(reserva.obtenerElementoReservable().equals(this)){
+               return  false;
+           }
+        }
+        return true;
+    }
 }

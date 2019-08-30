@@ -17,6 +17,7 @@ import java.util.List;
 public class Restaurante {
     private String nombreRestaurante = "";
     private List<Cliente> clientes = new ArrayList<>();
+    private List<Reserva> reservas = new ArrayList<>();
     
     public Restaurante(String nombreRestaurante){
         this.nombreRestaurante = nombreRestaurante;
@@ -29,6 +30,19 @@ public class Restaurante {
     
     public void agregarCliente(Cliente cliente){
         this.clientes.add(cliente);
+    }
+
+    public List<Reserva> obtenerReservas(){
+        for(Cliente cliente:clientes){
+            agregarReservas(cliente.obtenerReservas());
+        }
+        return reservas;
+    }
+
+    private void agregarReservas(List<Reserva> listaReservas){
+        for(Reserva reserva:listaReservas){
+            reservas.add(reserva);
+        }
     }
 
     @Override

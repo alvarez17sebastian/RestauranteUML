@@ -1,20 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8c711b3-bc5b-4d3b-8f6f-1f64e992e633" name="Default Changelist" comment="" />
+    <list default="true" id="80976ddc-4fca-4d51-9f92-6c06398125bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../doc/Ejercicio patrones de diseño v2 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Empresa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Interfaces/IReserva.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Interfaces/IReservable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Motivo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Persona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteNombreElemento.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cocina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Empresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Interfaces/IReserva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Interfaces/IReservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Motivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/constantes/ConstanteNombreElemento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/Ejercicio patrones de diseño v2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/ejercicio patrones de diseño.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteTipoCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/constantes/ConstanteTipoCliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Reserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/constantes/ConstanteTipoCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/constantes/ConstanteTipoCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1PyiJh0sFynvdmcNHgM6KCWqfNv" />
+  <component name="ProjectId" id="1Q3WOhKsCcVbnZvEj6dl8GRv5rK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,11 +96,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8c711b3-bc5b-4d3b-8f6f-1f64e992e633" name="Default Changelist" comment="" />
-      <created>1566852666141</created>
+      <changelist id="80976ddc-4fca-4d51-9f92-6c06398125bc" name="Default Changelist" comment="" />
+      <created>1566999729767</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566852666141</updated>
+      <updated>1566999729767</updated>
     </task>
     <servers />
   </component>
@@ -76,9 +119,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesa.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesa.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java</url>
           <line>46</line>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

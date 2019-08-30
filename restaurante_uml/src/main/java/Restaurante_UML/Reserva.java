@@ -5,8 +5,11 @@
  */
 package Restaurante_UML;
 
+import Restaurante_UML.Interfaces.IReserva;
+import Restaurante_UML.Interfaces.IReservable;
 import Restaurante_UML.constantes.ConstantesTipoMesa;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -15,33 +18,36 @@ import java.util.UUID;
  * @author sebastian.alvarez
  */
 public class Reserva {
+
+    private Restaurante restaurante;
     private String numeroReserva;
-    private Mesa mesa;
-    private String motivo;
+    private IReservable elementoReservable;
+    private Motivo motivo;
     
-    public Reserva(String numeroReserva,Mesa mesa,String motivo){
+    public Reserva(String numeroReserva,IReservable elementoReservable, Motivo motivo,Restaurante restaurante){
         this.numeroReserva = numeroReserva;
-        this.mesa = mesa;
+        this.elementoReservable = elementoReservable;
         this.motivo = motivo;
+        this.restaurante = restaurante;
+
     }
-    
-    public void establecerAmbienteDeElemento(){
-        if(mesa.obtenerTipoMesa().equals(ConstantesTipoMesa.MESA_LOUNGE)){
-            asignarAmbiente(mesa.obtenerElementosDeConfort());
-        }
+
+    public IReservable obtenerElementoReservable(){
+        return this.elementoReservable;
     }
-    
-    private void asignarAmbiente(List<ElementoConfort> elementosConfort){
-        for(ElementoConfort element: elementosConfort){
-            element.indicarAmbiente("ambiente: " + UUID.randomUUID().toString());
-        }
+
+    public boolean verificarDisponibilidad(){
+        return elementoReservable.verificarDisponibilidad(restaurante.obtenerReservas());
+    }
+
+    public String obtenerNumeroDeReserva(){
+        return this.numeroReserva;
     }
 
     @Override
     public String toString() {
-        String content = "Numero reserva: " + numeroReserva + "\nMesa: " + mesa + "\nMotivo: " + motivo;
+        String content = "Numero reserva: " + numeroReserva + "\nMesa: " + elementoReservable + "\nMotivo: " + motivo;
         return content;
     }
-    
-    
+
 }

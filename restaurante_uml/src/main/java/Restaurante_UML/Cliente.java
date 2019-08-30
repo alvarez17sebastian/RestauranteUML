@@ -6,6 +6,7 @@
 package Restaurante_UML;
 
 
+import Restaurante_UML.Interfaces.IReserva;
 import Restaurante_UML.constantes.ConstanteTipoCliente;
 
 import java.util.ArrayList;
@@ -15,20 +16,24 @@ import java.util.List;
  *
  * @author sebastian.alvarez
  */
-public class Cliente {
-    private String cedula;
-    private String nombre;
-    private String tipoCliente;
-    private List<Reserva> reservas = new ArrayList<>();
-    
-    public Cliente(String cedula, String nombre){
-        this.cedula = cedula;
+public abstract class Cliente implements IReserva {
+    protected String identificacion;
+    protected String nombre;
+    protected String tipoCliente;
+    protected List<Reserva> reservas = new ArrayList<>();
+
+    public Cliente(){
+
+    }
+
+    public Cliente(String identificacion, String nombre){
+        this.identificacion = identificacion;
         this.nombre = nombre;
         this.tipoCliente = ConstanteTipoCliente.TIPO_CLIENTE_NORMAL;
     }
     
-    public Cliente(String cedula, String nombre, String tipoCliente){
-        this.cedula = cedula;
+    public Cliente(String identificacion, String nombre, String tipoCliente){
+        this.identificacion = identificacion;
         this.nombre = nombre;
         this.tipoCliente = tipoCliente;
     }
@@ -37,9 +42,14 @@ public class Cliente {
         return this.reservas;
     }
     
-    public boolean realizarReserva(Reserva reserva){
-        this.reservas.add(reserva);
-        verificarClienteVIP();
+    protected boolean realizarReserva(Reserva reserva){
+        if(reserva.verificarDisponibilidad()){
+            this.reservas.add(reserva);
+            verificarClienteVIP();
+            System.out.println("Reserva # " +reserva.obtenerNumeroDeReserva()+ " exitosa");
+        }else{
+            System.out.println("Reserva # " +reserva.obtenerNumeroDeReserva()+ " no se pudo efectuar");
+        }
         return true;
     }
 
@@ -59,7 +69,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        String content = "\nNombre: " + nombre + "\nCedula: " + cedula + "\nTipo cliente:" + tipoCliente +"\nReservas: " + reservas + "\n" ;
+        String content = "\nNombre: " + nombre + "\nCedula: " + identificacion + "\nTipo cliente:" + tipoCliente +"\nReservas: " + reservas + "\n" ;
         return content;
     }
     
