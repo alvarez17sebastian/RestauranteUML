@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="80976ddc-4fca-4d51-9f92-6c06398125bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Persona.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +28,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,7 +80,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
