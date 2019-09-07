@@ -23,6 +23,7 @@ public class Reserva {
     private String numeroReserva;
     private IReservable elementoReservable;
     private Motivo motivo;
+    private Cliente cliente;
     
     public Reserva(String numeroReserva,IReservable elementoReservable, Motivo motivo,Restaurante restaurante){
         this.numeroReserva = numeroReserva;
@@ -30,6 +31,14 @@ public class Reserva {
         this.motivo = motivo;
         this.restaurante = restaurante;
 
+    }
+
+    public Cliente obtenerCliente(){
+        return this.cliente;
+    }
+
+    public void asignarCliente(Cliente cliente){
+        this.cliente = cliente;
     }
 
     public IReservable obtenerElementoReservable(){

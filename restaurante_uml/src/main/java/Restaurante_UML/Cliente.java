@@ -45,6 +45,7 @@ public abstract class Cliente implements IReserva {
     protected boolean realizarReserva(Reserva reserva){
         if(reserva.verificarDisponibilidad()){
             this.reservas.add(reserva);
+            reserva.asignarCliente(this);
             verificarClienteVIP();
             System.out.println("Reserva # " +reserva.obtenerNumeroDeReserva()+ " exitosa");
         }else{

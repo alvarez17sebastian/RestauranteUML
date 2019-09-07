@@ -18,6 +18,10 @@ public class Restaurante {
     private String nombreRestaurante = "";
     private List<Cliente> clientes = new ArrayList<>();
     private List<Reserva> reservas = new ArrayList<>();
+
+    public Restaurante(){
+
+    }
     
     public Restaurante(String nombreRestaurante){
         this.nombreRestaurante = nombreRestaurante;
@@ -33,16 +37,25 @@ public class Restaurante {
     }
 
     public List<Reserva> obtenerReservas(){
+        reservas = new ArrayList<>();
         for(Cliente cliente:clientes){
             agregarReservas(cliente.obtenerReservas());
         }
         return reservas;
     }
 
+    public List<Cliente> obtenerClientes(){
+        return this.clientes;
+    }
+
     private void agregarReservas(List<Reserva> listaReservas){
         for(Reserva reserva:listaReservas){
             reservas.add(reserva);
         }
+    }
+
+    public void accept(Visitor visitor){
+        System.out.println(visitor.visit(this));
     }
 
     @Override
