@@ -16,6 +16,7 @@ import Restaurante_UML.constantes.ConstantesTipoMesa;
 public class Main {
     public static void main(String[] args){
         
+        //test
         Restaurante restaurante_ElCafetero = new Restaurante("El cafetero");
         
         ElementoConfort tv = new ElementoConfort("Tv");
