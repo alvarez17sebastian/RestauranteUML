@@ -9,7 +9,7 @@ package Restaurante_UML;
  *
  * @author sebastian.alvarez
  */
-public class ElementoConfort {
+public  abstract class ElementoConfort {
     private String nombre;
     private String ambiente;
     

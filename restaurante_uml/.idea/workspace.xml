@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80976ddc-4fca-4d51-9f92-6c06398125bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/CantidadDePersonasQueReservan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/CantidadDeReservas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Visitor.java" afterDir="false" />
+    <list default="true" id="c37c547a-782a-45a8-90e9-86af6cae0b1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ItemReservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Musica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Televisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fabricaAbstracta/EmpresaBuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fabricaAbstracta/PersonaBuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/CantidadDePersonasQueReservan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/ElementoConfort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/ElementoConfort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Motivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Motivo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/CantidadDePersonasQueReservan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/CantidadDeReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/ReservasTotales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ElementoConfort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ElementoConfort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Reserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Motivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Motivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/VisitorRestaurante.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +69,7 @@
       <module name="main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Restaurante_UML.*" />
+          <option name="PATTERN" value="visitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,7 +88,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80976ddc-4fca-4d51-9f92-6c06398125bc" name="Default Changelist" comment="" />
+      <changelist id="c37c547a-782a-45a8-90e9-86af6cae0b1b" name="Default Changelist" comment="" />
       <created>1566999729767</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -110,7 +114,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java</url>
-          <line>57</line>
+          <line>58</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

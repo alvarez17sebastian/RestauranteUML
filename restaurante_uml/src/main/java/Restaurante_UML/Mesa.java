@@ -17,10 +17,10 @@ import java.util.UUID;
  *
  * @author sebastian.alvarez
  */
-public class Mesa implements IReservable {
+public class Mesa extends ItemReservable {
+
     private String numeroMesa;
     private String tipoMesa;
-    private List<ElementoConfort> elementosConfort = new ArrayList<>();
     
     public Mesa(String numeroMesa,String tipoMesa){
         this.numeroMesa = numeroMesa;
@@ -38,17 +38,17 @@ public class Mesa implements IReservable {
     }
 
 
-    private void establecerAmbienteDeElemento(){
+    protected void establecerAmbienteDeElemento(){
         if(this.tipoMesa.equals(ConstantesTipoMesa.MESA_LOUNGE)){
             asignarAmbiente(elementosConfort);
         }
     }
 
-    private void asignarAmbiente(List<ElementoConfort> elementosConfort){
+    /*private void asignarAmbiente(List<ElementoConfort> elementosConfort){
         for(ElementoConfort element: elementosConfort){
             element.indicarAmbiente("ambiente: " + UUID.randomUUID().toString());
         }
-    }
+    }*/
 
     @Override
     public String toString() {

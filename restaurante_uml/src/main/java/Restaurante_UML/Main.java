@@ -8,6 +8,8 @@ package Restaurante_UML;
 
 import Restaurante_UML.constantes.ConstanteMotivo;
 import Restaurante_UML.constantes.ConstantesTipoMesa;
+import visitor.ReservasTotales;
+import visitor.VisitorRestaurante;
 
 /**
  *
@@ -18,12 +20,23 @@ public class Main {
 
         Restaurante restauranteElCafetero = new Restaurante("El cafetero");
 
-        ElementoConfort tv = new ElementoConfort("Tv");
-        ElementoConfort equipo = new ElementoConfort("Musica");
+        //ElementoConfort tv = new ElementoConfort("Tv");
+        //ElementoConfort equipo = new ElementoConfort("Musica");
 
-        Mesa mesa1 = new Mesa("1",ConstantesTipoMesa.MESA_INDIVIDUAL);
+        ElementoConfort elementoTv = new Televisor("Televisor");
+        ElementoConfort elementoMusica = new Musica("Musica");
+
+        /*Mesa mesa1 = new Mesa("1",ConstantesTipoMesa.MESA_INDIVIDUAL);
         Mesa mesa2 = new Mesa("2",ConstantesTipoMesa.MESA_PAREJA);
-        Mesa mesa3 = new Mesa("2",ConstantesTipoMesa.MESA_PAREJA);
+        Mesa mesa3 = new Mesa("3",ConstantesTipoMesa.MESA_PAREJA);*/
+
+        ItemReservable mesa1= new Mesa("1",ConstantesTipoMesa.MESA_INDIVIDUAL);
+        mesa1.agregarElementoDeConfort(elementoTv);
+
+        ItemReservable mesa2 = new Mesa("2",ConstantesTipoMesa.MESA_LOUNGE);
+        mesa2.agregarElementoDeConfort(elementoMusica);
+
+        ItemReservable mesa3 = new Mesa("3",ConstantesTipoMesa.MESA_PAREJA);
 
 
         Cliente sebastian = new Persona("1035868309","Sebastian");
@@ -43,16 +56,11 @@ public class Main {
         eduardo.realizarReserva(reserva3);
         restauranteElCafetero.agregarCliente(eduardo);
 
-        int count = restauranteElCafetero.obtenerReservas().size();
-
-        Visitor cantidadDePersonasQueReservan = new CantidadDePersonasQueReservan();
-
-        restauranteElCafetero.accept(cantidadDePersonasQueReservan);
-
-
-        Visitor cantidadtotalDeReReservas = new CantidadDeReservas();
+        VisitorRestaurante cantidadtotalDeReReservas = new ReservasTotales();
 
         restauranteElCafetero.accept(cantidadtotalDeReReservas);
+
+        System.out.println(restauranteElCafetero);
 
 
     }

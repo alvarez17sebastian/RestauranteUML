@@ -6,7 +6,8 @@
 package Restaurante_UML;
 
 
-import Restaurante_UML.constantes.ConstanteTipoCliente;
+import visitor.VisitorRestaurante;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,8 +55,8 @@ public class Restaurante {
         }
     }
 
-    public void accept(Visitor visitor){
-        System.out.println(visitor.visit(this));
+    public void accept(VisitorRestaurante visitorRestaurante){
+        System.out.println(visitorRestaurante.visit(this));
     }
 
     @Override

@@ -24,4 +24,9 @@ public class Motivo {
         this.nombreMotivo = nombreMotivo;
         this.descripcionMotivo = descripcionMotivo;
     }
+
+    @Override
+    public String toString() {
+        return "Nombre motivo: " + nombreMotivo;
+    }
 }
