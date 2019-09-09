@@ -7,6 +7,10 @@ public class Persona extends Cliente {
     private int edad;
     private int genero;
 
+    public Persona(){
+
+    }
+
     public Persona(String cedula, String nombre) {
         super(cedula,nombre);
     }

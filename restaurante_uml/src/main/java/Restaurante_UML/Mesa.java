@@ -21,6 +21,10 @@ public class Mesa extends ItemReservable {
 
     private String numeroMesa;
     private String tipoMesa;
+
+    public Mesa(){
+
+    }
     
     public Mesa(String numeroMesa,String tipoMesa){
         this.numeroMesa = numeroMesa;
@@ -43,12 +47,6 @@ public class Mesa extends ItemReservable {
             asignarAmbiente(elementosConfort);
         }
     }
-
-    /*private void asignarAmbiente(List<ElementoConfort> elementosConfort){
-        for(ElementoConfort element: elementosConfort){
-            element.indicarAmbiente("ambiente: " + UUID.randomUUID().toString());
-        }
-    }*/
 
     @Override
     public String toString() {

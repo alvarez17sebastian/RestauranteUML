@@ -32,6 +32,10 @@ public class Restaurante {
         this.nombreRestaurante = nombreRestaurante;
         this.clientes = clientes;
     }
+
+    public String obtenerNombre(){
+        return this.nombreRestaurante;
+    }
     
     public void agregarCliente(Cliente cliente){
         this.clientes.add(cliente);

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 public abstract class ItemReservable implements IReservable {
+
     protected List<ElementoConfort> elementosConfort = new ArrayList<>();
 
     public void agregarElementoDeConfort(ElementoConfort elementoConfort){
