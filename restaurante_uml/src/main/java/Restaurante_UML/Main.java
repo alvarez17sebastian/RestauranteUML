@@ -25,12 +25,8 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args){
-
-
+        
         Restaurante restauranteElCafetero = new Restaurante("El cafetero");
-
-        //ElementoConfort tv = new ElementoConfort("Tv");
-        //ElementoConfort equipo = new ElementoConfort("Musica");
 
         ElementoConfort elementoTv = new Televisor("Televisor");
         ElementoConfort elementoMusica = new Musica("Musica");

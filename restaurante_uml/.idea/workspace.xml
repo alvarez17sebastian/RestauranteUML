@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37c547a-782a-45a8-90e9-86af6cae0b1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../doc/Ejercicio de patrones de diseño V3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/DiagramaVersion2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
