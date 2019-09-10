@@ -5,7 +5,8 @@ import Restaurante_UML.Mesa;
 import Restaurante_UML.constantes.ConstanteItemReservable;
 
 public class ItemReservableFactory {
-    public ItemReservable obtenerItemReservable(int tipoItemReservable){
+
+    public static ItemReservable obtenerItemReservable(int tipoItemReservable){
         switch (tipoItemReservable){
             case ConstanteItemReservable.TIPO_MESA:
                 return new Mesa();

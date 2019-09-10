@@ -8,7 +8,7 @@ import Restaurante_UML.constantes.ConstanteTipoCliente;
 public class ClienteFactory {
 
 
-    public Cliente obtenerCliente(int tipoCliente,String identificación, String nombre){
+    public static Cliente obtenerCliente(int tipoCliente,String identificación, String nombre){
 
         switch (tipoCliente){
             case ConstanteTipoCliente.KEY_CLIENTE_PERSONA:

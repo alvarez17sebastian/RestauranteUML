@@ -23,7 +23,6 @@ public class Mesa extends ItemReservable {
     private String tipoMesa;
 
     public Mesa(){
-
     }
     
     public Mesa(String numeroMesa,String tipoMesa){
