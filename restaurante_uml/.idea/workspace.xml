@@ -2,42 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37c547a-782a-45a8-90e9-86af6cae0b1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Receta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/constantes/ConstanteNombreIngrediente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/constantes/ConstanteTipoIngrediente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/constantes/ConstanteTipoPlato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/factoria/ItemReservableFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/factoria/PlatoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ingredientes/Ingrediente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ingredientes/IngredienteLiquido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ingredientes/IngredienteSolido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/platos/Plato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/platos/PlatoCompleto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/platos/PlatoMedio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/ingredientes/IRepositorioIngrediente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/ingredientes/RepositorioIngredienteImplementación.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/menu/IRepositorioMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/menu/RepositorioMenuImplementacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/reservas/IRepositorioReservas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/reservas/RepositorioReservasImplementacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/observadores/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/observadores/Sujeto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cocina.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Cocina.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Mesero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Receta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Receta.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Reserva.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/Restaurante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/factoria/ClienteFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/factoria/ItemReservableFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/visitor/ReservasTotales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/ingredientes/Ingrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/ingredientes/Ingrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/platos/Plato.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/platos/Plato.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Restaurante_UML/repositorio/ingredientes/RepositorioIngredienteImplementación.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Restaurante_UML/repositorio/ingredientes/RepositorioIngredienteImplementación.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cocina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Cocina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Mesero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Receta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Receta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Reserva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factoria/ClienteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/factoria/ClienteFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factoria/ItemReservableFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/ReservasTotales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/NumeroReservasRealizadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ingredientes/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/ingredientes/Ingrediente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/platos/Plato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/platos/Plato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/ingredientes/RepositorioIngredienteImplementación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurante_UML/repositorio/ingredientes/RepositorioIngredienteImplementación.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,18 +117,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Restaurante.java</url>
-          <line>61</line>
+          <line>59</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Cocina.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/factoria/PlatoFactory.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Cliente.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/main/java/Restaurante_UML/Cocina.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

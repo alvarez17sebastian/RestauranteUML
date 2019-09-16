@@ -8,6 +8,7 @@ package Restaurante_UML;
 
 import Restaurante_UML.Interfaces.IReserva;
 import Restaurante_UML.constantes.ConstanteTipoCliente;
+import Restaurante_UML.observadores.Sujeto;
 import Restaurante_UML.platos.Plato;
 import com.sun.corba.se.spi.activation.InitialNameServiceOperations;
 
@@ -18,7 +19,7 @@ import java.util.List;
  *
  * @author sebastian.alvarez
  */
-public abstract class Cliente implements IReserva {
+public abstract class Cliente extends Sujeto implements IReserva {
     protected String identificacion;
     protected String nombre;
     protected String tipoCliente;
@@ -34,36 +35,11 @@ public abstract class Cliente implements IReserva {
         this.tipoCliente = ConstanteTipoCliente.TIPO_CLIENTE_NORMAL;
         mesero = new Mesero(this);
     }
-    
-    public Cliente(String identificacion, String nombre, String tipoCliente){
-        this.identificacion = identificacion;
-        this.nombre = nombre;
-        this.tipoCliente = tipoCliente;
-        mesero = new Mesero(this);
-    }
-    
-    /*public List<Reserva> obtenerReservas(){
-        return this.reservas;
-    }*/
-
-
-    /*private void verificarClienteVIP(){
-        if(reservas.size() >= 5){
-            this.asignarTipoCliente(ConstanteTipoCliente.TIPO_CLIENTE_VIP);
-        }
-    }*/
 
     public Plato hacerPedido(Receta receta, String tipoPlato){
         Plato plato = mesero.hacerPedido(receta,tipoPlato);
+        this.notificar();
         return plato;
-    }
-
-    /*public int obtenerNumeroDeReservas(){
-        return this.reservas.size();
-    }*/
-    
-    public void asignarTipoCliente(String tipoCliente){
-        this.tipoCliente = tipoCliente;
     }
 
     @Override
@@ -71,6 +47,5 @@ public abstract class Cliente implements IReserva {
         String content = "\nNombre: " + nombre + "\nCedula: " + identificacion + "\nTipo cliente:" + tipoCliente;
         return content;
     }
-    
     
 }

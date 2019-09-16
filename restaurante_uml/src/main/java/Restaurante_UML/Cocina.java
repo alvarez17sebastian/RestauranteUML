@@ -15,20 +15,28 @@ public class Cocina  {
     private String direccion;
     private String telefono;
     private String jefeCocina;
+    private List<Ingrediente> inventarioIngredientes = new ArrayList<>();
 
     protected Restaurante restaurante;
     protected IRepositorioIngrediente repositorioIngrediente;
 
-    private List<Ingrediente> inventarioIngredientes = new ArrayList<>();
-
     private Plato plato;
 
-    public Cocina(){
+    public static Cocina instanciaCocina = null;
+
+    private Cocina(){
         repositorioIngrediente = new RepositorioIngredienteImplementación();
         inventarioIngredientes = repositorioIngrediente.cargarIngredientes();
     }
 
-    public Cocina(String especialidad, String direccion, String telefono, String jefeCocina) {
+    public static Cocina obtenerInstancia(){
+        if(instanciaCocina == null){
+            instanciaCocina = new Cocina();
+        }
+        return instanciaCocina;
+    }
+
+    private Cocina(String especialidad, String direccion, String telefono, String jefeCocina) {
         this.especialidad = especialidad;
         this.direccion = direccion;
         this.telefono = telefono;
@@ -40,9 +48,32 @@ public class Cocina  {
 
     public  Plato cocinar(Receta receta,String tipoPlato){
 
-        Plato plato = PlatoFactory.obtenerPlato(tipoPlato);
-        plato.setPrecio(receta.getPrecio());
+        plato = null;
 
+        if(verificarSiSePreparaElPlato(receta)){
+            plato = PlatoFactory.obtenerPlato(tipoPlato);
+            plato.setPrecio(receta.getPrecio());
+        }
         return plato;
+    }
+
+    private boolean verificarSiSePreparaElPlato(Receta receta){
+        List<Ingrediente> ingredientesParaReceta = receta.obtenerIngredientes();
+
+        int conteo = 0;
+        for(Ingrediente ingredienteParaPlato : ingredientesParaReceta){
+            for(int i = 0; i < inventarioIngredientes.size(); i++){
+                if(ingredienteParaPlato.obtenerNombreIngrediente().equals(inventarioIngredientes.get(i).obtenerNombreIngrediente())){
+                    inventarioIngredientes.get(i).asignarCantidad(inventarioIngredientes.get(i).obtenerCantidad() - ingredienteParaPlato.obtenerCantidad());
+                    if(inventarioIngredientes.get(i).obtenerCantidad() >= 0){
+                        conteo++;
+                    }
+                }
+            }
+        }
+        if(conteo == ingredientesParaReceta.size()){
+            return true;
+        }
+        return false;
     }
 }

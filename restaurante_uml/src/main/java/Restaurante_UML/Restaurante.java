@@ -5,7 +5,6 @@
  */
 package Restaurante_UML;
 
-
 import Restaurante_UML.repositorio.menu.IRepositorioMenu;
 import Restaurante_UML.repositorio.menu.RepositorioMenuImplementacion;
 import Restaurante_UML.repositorio.reservas.IRepositorioReservas;
@@ -25,13 +24,12 @@ public class Restaurante {
     private List<Reserva> reservas;
     private List<Receta> menu;
     private IRepositorioReservas iRepositorioReservas;
-    IRepositorioMenu repositorioMenu;
+    private IRepositorioMenu repositorioMenu;
 
 
     public Restaurante(){
         iRepositorioReservas = new RepositorioReservasImplementacion();
         reservas = iRepositorioReservas.cargarReservas();
-
         repositorioMenu = new RepositorioMenuImplementacion();
         menu = repositorioMenu.cargarRecetas();
     }

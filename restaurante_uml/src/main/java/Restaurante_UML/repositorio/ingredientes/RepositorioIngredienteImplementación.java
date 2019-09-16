@@ -19,9 +19,9 @@ public class RepositorioIngredienteImplementación implements IRepositorioIngred
 
         List<Ingrediente> ingredientes = new ArrayList<>();
 
-        Ingrediente arroz = new IngredienteSolido(ConstanteNombreIngrediente.ARROZ,20, ConstanteTipoIngrediente.NORMAL);
+        Ingrediente arroz = new IngredienteSolido(ConstanteNombreIngrediente.ARROZ,10, ConstanteTipoIngrediente.NORMAL);
         Ingrediente frijol = new IngredienteSolido(ConstanteNombreIngrediente.FRIJOLES,20, ConstanteTipoIngrediente.NORMAL);
-        Ingrediente papaCapira = new IngredienteSolido(ConstanteNombreIngrediente.PAPA_CAPIRA,20, ConstanteTipoIngrediente.NORMAL);
+        Ingrediente papaCapira = new IngredienteSolido(ConstanteNombreIngrediente.PAPA_CAPIRA,30, ConstanteTipoIngrediente.NORMAL);
         Ingrediente carneRes = new IngredienteSolido(ConstanteNombreIngrediente.CARNE_RES,20, ConstanteTipoIngrediente.RES);
         Ingrediente aceite = new IngredienteLiquido(ConstanteNombreIngrediente.ACEITE,20, ConstanteTipoIngrediente.NORMAL);
         Ingrediente pescado = new IngredienteSolido(ConstanteNombreIngrediente.PESCADO,20, ConstanteTipoIngrediente.NORMAL);

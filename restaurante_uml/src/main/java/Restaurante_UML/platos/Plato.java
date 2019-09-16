@@ -1,10 +1,5 @@
 package Restaurante_UML.platos;
 
-import Restaurante_UML.Receta;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class Plato {
 
     protected String nombrePlato;
@@ -21,7 +16,6 @@ public abstract class Plato {
     public void setNombrePlato(String nombrePlato) {
         this.nombrePlato = nombrePlato;
     }
-
 
     public void setPrecio(double precio) {
         this.precio = precio;

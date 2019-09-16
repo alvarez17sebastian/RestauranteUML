@@ -17,7 +17,7 @@ import java.util.UUID;
  *
  * @author sebastian.alvarez
  */
-public class Reserva {
+public class Reserva{
 
     //private Restaurante restaurante;
     private String numeroReserva;
@@ -60,10 +60,6 @@ public class Reserva {
     public IReservable obtenerElementoReservable(){
         return this.elementoReservable;
     }
-
-    /*public boolean verificarDisponibilidad(){
-        return elementoReservable.verificarDisponibilidad(restaurante.obtenerReservas());
-    }*/
 
     public String obtenerNumeroDeReserva(){
         return this.numeroReserva;

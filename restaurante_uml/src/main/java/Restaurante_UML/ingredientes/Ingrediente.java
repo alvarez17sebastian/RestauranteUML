@@ -12,6 +12,16 @@ public abstract class Ingrediente {
         this.tipoIngrediente = tipoIngrediente;
     }
 
-    public Ingrediente(String nombre, String cantidad){
+    public String obtenerNombreIngrediente(){
+        return this.nombre;
     }
+
+    public double obtenerCantidad(){
+        return this.cantidad;
+    }
+
+    public void asignarCantidad(double cantidad){
+        this.cantidad = cantidad;
+    }
+
 }

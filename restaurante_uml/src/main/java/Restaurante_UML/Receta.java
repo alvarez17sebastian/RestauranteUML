@@ -9,6 +9,7 @@ public class Receta{
 
     private String nombre;
     private double precio;
+
     private List<Ingrediente> ingredientes = new ArrayList<>();
 
     public Receta(){
