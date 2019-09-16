@@ -1,7 +1,6 @@
-package factoria;
+package Restaurante_UML.factoria;
 import Restaurante_UML.Cliente;
 import Restaurante_UML.Empresa;
-import Restaurante_UML.Interfaces.IReserva;
 import Restaurante_UML.Persona;
 import Restaurante_UML.constantes.ConstanteTipoCliente;
 

@@ -19,35 +19,51 @@ import java.util.UUID;
  */
 public class Reserva {
 
-    private Restaurante restaurante;
+    //private Restaurante restaurante;
     private String numeroReserva;
     private IReservable elementoReservable;
     private Motivo motivo;
     private Cliente cliente;
+    private boolean disponible = true;
     
-    public Reserva(String numeroReserva,IReservable elementoReservable, Motivo motivo,Restaurante restaurante){
+    public Reserva(String numeroReserva,IReservable elementoReservable, Motivo motivo){
         this.numeroReserva = numeroReserva;
         this.elementoReservable = elementoReservable;
         this.motivo = motivo;
-        this.restaurante = restaurante;
+        //this.restaurante = restaurante;
 
+    }
+
+    public boolean obtenerDisponibilidad(){
+        return this.disponible;
+    }
+
+    public void asignarDisponibilildad(boolean disponibilidad){
+        this.disponible = disponibilidad;
     }
 
     public Cliente obtenerCliente(){
         return this.cliente;
     }
 
+
     public void asignarCliente(Cliente cliente){
         this.cliente = cliente;
+        disponible = false;
+    }
+
+    public void liberarReserva(){
+        this.cliente = null;
+        disponible = true;
     }
 
     public IReservable obtenerElementoReservable(){
         return this.elementoReservable;
     }
 
-    public boolean verificarDisponibilidad(){
+    /*public boolean verificarDisponibilidad(){
         return elementoReservable.verificarDisponibilidad(restaurante.obtenerReservas());
-    }
+    }*/
 
     public String obtenerNumeroDeReserva(){
         return this.numeroReserva;

@@ -6,6 +6,10 @@
 package Restaurante_UML;
 
 
+import Restaurante_UML.repositorio.menu.IRepositorioMenu;
+import Restaurante_UML.repositorio.menu.RepositorioMenuImplementacion;
+import Restaurante_UML.repositorio.reservas.IRepositorioReservas;
+import Restaurante_UML.repositorio.reservas.RepositorioReservasImplementacion;
 import visitor.VisitorRestaurante;
 
 import java.util.ArrayList;
@@ -18,20 +22,62 @@ import java.util.List;
 public class Restaurante {
     private String nombreRestaurante = "";
     private List<Cliente> clientes = new ArrayList<>();
-    private List<Reserva> reservas = new ArrayList<>();
+    private List<Reserva> reservas;
+    private List<Receta> menu;
+    private IRepositorioReservas iRepositorioReservas;
+    IRepositorioMenu repositorioMenu;
+
 
     public Restaurante(){
+        iRepositorioReservas = new RepositorioReservasImplementacion();
+        reservas = iRepositorioReservas.cargarReservas();
 
+        repositorioMenu = new RepositorioMenuImplementacion();
+        menu = repositorioMenu.cargarRecetas();
+    }
+
+    public List<Receta> obtenerMenu(){
+        return this.menu;
     }
     
     public Restaurante(String nombreRestaurante){
         this.nombreRestaurante = nombreRestaurante;
+        IRepositorioReservas iRepositorioReservas = new RepositorioReservasImplementacion();
+        reservas = iRepositorioReservas.cargarReservas();
+        repositorioMenu = new RepositorioMenuImplementacion();
+        menu = repositorioMenu.cargarRecetas();
     }
-    
-    public Restaurante(String nombreRestaurante,List<Cliente> clientes){
-        this.nombreRestaurante = nombreRestaurante;
-        this.clientes = clientes;
+
+    public boolean realizarReserva(Cliente cliente){
+        for(Reserva reserva:reservas){
+            if(reserva.obtenerDisponibilidad()){
+                reserva.asignarCliente(cliente);
+                return true;
+            }
+        }
+        return false;
     }
+
+    public void liberarReserva(Cliente cliente){
+        List<Reserva> reservasNoDisponibles = reservasNoDisponibles();
+        for(Reserva reserva : reservasNoDisponibles){
+            if(reserva.obtenerCliente().identificacion.equals(cliente.identificacion)){
+                reserva.liberarReserva();
+                break;
+            }
+        }
+    }
+
+    private List<Reserva> reservasNoDisponibles(){
+        List<Reserva> reservasNoDisponibles = new ArrayList<>();
+        for(Reserva reserva:reservas){
+            if(!reserva.obtenerDisponibilidad()){
+                reservasNoDisponibles.add(reserva);
+            }
+        }
+        return reservasNoDisponibles;
+    }
+
 
     public String obtenerNombre(){
         return this.nombreRestaurante;
@@ -42,10 +88,6 @@ public class Restaurante {
     }
 
     public List<Reserva> obtenerReservas(){
-        reservas = new ArrayList<>();
-        for(Cliente cliente:clientes){
-            agregarReservas(cliente.obtenerReservas());
-        }
         return reservas;
     }
 
